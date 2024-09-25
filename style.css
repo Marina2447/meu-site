@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.geral {
+    height: 100%;
+}
+
+.container{
+    width: 900px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+.meu-menu {
+    background-color: black;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    height: 70px;
+}
+
+
+.menu-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    background-image: url(assets/Salon\ Line\ logo-600x315w.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 127px;
+    border-radius: 100px;
+    width: 70px;
+    height: 70px;
+    margin: 1px;
+    margin-right: 20px;
+}
+
+
+
+.links {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+   
+    
+}
+
+.links, a {
+    text-decoration: none;
+    margin: 7px;
+    font-weight: bold;
+    color: darkgray !important;
+    font-family: "Open Sans", sans serif ;
+}
+
+a:hover {
+    color: aquamarine !important ;
+    letter-spacing: 5px;
+    
+ 
+}
+
+
+.banner{
+    display: flex;
+    background-image: url(assets/imagem\ logo.avif);
+    background-attachment: fixed; 
+    height: 530px;
+    width: 100%;
+    background-size: cover;
+    background-position: center -1%;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+    background-size: contain;
+  
+}
+
+.news{
+    display: flex;
+    height: 100px;
+    margin-bottom: 100px;
+}
+
+.news-left {
+    flex: 2;
+    align-items: center;
+    height: 150px;
+    
+}
+
+.news-right {
+    flex: 1;
+    align-content: center;
+    height: 150px;
+    text-align: center;
+}
+  
+button:hover {
+    transform: scale(1.1);
+   
+}
+
+
+
+
+
+.container0 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-image: url(assets/amarelo.jpg);
+    height: 150px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -40px;
+   
+
+ 
+}
+
+
+
+/* Estilo geral para os produtos */
+.produto1, .produto2, .produto3, .produto4, .produto5 {
+    border: 1px solid #ccc;
+    border-radius: 10px; 
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    max-width: 222px;
+    margin: 10px;
+    background-color: #fff;
+    font-size: 14px;
+    position: relative;
+}
+
+
+.icone-coracao {
+    position: absolute;
+    font-size: 20px; 
+    color: red;
+    top: 10px;      
+    left: 10px;     
+ 
+    
+}
+
+.icone-coracao:hover {
+    cursor: pointer;
+    color: darkred;
+}
+
+/* Estilo para as imagens dentro dos produtos */
+.produto1 img, .produto2 img, .produto3 img, .produto4 img, .produto5 img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para os títulos  */
+.produto1 h3, .produto2 h3, .produto3 h3, .produto4 h3, .produto5 h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Estilo para os textos de preço */
+.produto1 p, .produto2 p, .produto3 p, .produto4 p, .produto5 p {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+/* Estilo para o preço antigo */
+.preco-antigo {
+    color: red;
+    text-decoration: line-through; /* Adiciona um risco sobre o preço */
+}
+
+/* Estilo para o preço novo */
+.preco-novo {
+    color: green;
+    font-weight: bold;
+}
+
+
+
+
+
+/* Contêiner dos produtos */
+.container-produtos {
+    display: flex;
+    justify-content: space-around; 
+    background-image: url(assets/fundoo.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    height: 400px;
+    gap: 20px;
+      
+}
+
+/* Estilo do botão de adicionar ao carrinho */
+.btn-carrinho {
+    background-color: black; 
+    color: white;
+    border: none;
+    border-radius: 5px; 
+    padding: 8px 12px; 
+    font-size: 14px; 
+    cursor: pointer; 
+    margin-top: 10px; 
+    width: 100%; 
+    text-align: center; 
+}
+
+
+
+.btn-carrinho:hover {
+    background-color: #218838;
+}
+
+
+
+@media (max-width: 768px) {
+    .produto {
+        flex: 1 1 calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .produto {
+        flex: 1 1 100%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .container-produtos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+footer {
+   
+    background-color: black;
+    color: white;
+    justify-content: center;
+    padding: 5px;
+    text-align: center;
+    font-size: 0.9rem; 
+    
+}
